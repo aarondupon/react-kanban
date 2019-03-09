@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "react-sortablejs": "^1.5.1",
+    "webpack": "^4.29.6"
   },
   "scripts": {
     "start": "react-scripts start",

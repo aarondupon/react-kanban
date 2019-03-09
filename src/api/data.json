@@ -1,0 +1,147 @@
+[
+    {
+        "title": "Applied",
+        "items":[
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            }
+        ]
+    },
+    {
+        "title": "Interview",
+        "items":[
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            }
+        ]
+    },
+    {
+        "title": "Interview 2",
+        "items":[
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            }
+        ]
+    },
+    {
+        "title": "Rejected",
+        "items":[
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            }
+        ]
+    },
+    {
+        "title": "Add to group hired",
+        "items":[
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            },
+            {
+                "name": "Emilia clark",
+                "age": 30,
+                "gender": "Male",
+                "location": "deurne"
+            }
+        ]
+    }
+]
