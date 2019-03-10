@@ -43,14 +43,12 @@ export default function Kanban({data:initialData}){
         const  newData = sort(order,[...data, selectedData],'id');
         setData(newData)
     }
-    function updateSelectedData(selectedData) {
-        setSelectedData(selectedData);
-    }
+
     return (    
       <Grid 
         className={'grid'}
-        onMouseUp={()=>updateSelectedData(null)}
-        onDragEnd={()=>updateSelectedData(null)}
+        onMouseUp={()=>setSelectedData(null)}
+        onDragEnd={()=>setSelectedData(null)}
         options={{
             group: {
                 name: 'list-group',
@@ -67,7 +65,7 @@ export default function Kanban({data:initialData}){
             <List 
                 itemRender={UserItem}
                 items={list.items}  
-                onSelectListItem={updateSelectedData} 
+                onSelectListItem={setSelectedData} 
                 onChange={(order) => updateList(order,key)} 
                 />
         </Panel>)}
