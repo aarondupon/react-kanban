@@ -3,6 +3,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 http://kanban.aarondupon.be/
 
+[![Image from Gyazo](https://i.gyazo.com/82a85d2805bceb60a6841e6406c66099.gif)](https://gyazo.com/82a85d2805bceb60a6841e6406c66099)
+
 ## Available Scripts
 
 In the project directory, you can run:
