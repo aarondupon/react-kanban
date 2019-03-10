@@ -1,0 +1,18 @@
+li.sortable-chosen{
+    transition: background-color 50ms;
+    background:rgb(88, 199, 255);
+    color:#fff !important;
+}
+
+li.sortable-ghost{
+    color:#fff!important;
+    background-color: #fff;
+}
+
+.sortable-ghost{
+    border: 5px dotted black;
+    box-sizing: border-box;
+}
+.sortable-ghost div {
+    visibility: hidden;
+}

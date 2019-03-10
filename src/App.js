@@ -1,21 +1,51 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import data from './api/data.json';
-import List from './components/List';
+import React, {useState} from 'react';
+import styled from 'styled-components';
+import Kanban from './view/kanban';
+import {generateDummyData} from './api';
 
-console.log(data)
+const Info = styled.div`
+    padding: 20px;
+    width:100%;
+    background:#fff;
+    color:#000;
+    z-Index:99999;
+    max-width:500px;
+
+`;
+
+const CloseBtn = styled.button`
+    padding: 10px 20px;
+    margin: 10px 0px;
+    width:auto;
+    display:inline-block;
+    background:#71ed73;
+    color:#ffff;
+    border:none;
+    font-size:1.2em;
+    z-Index:99999;
 
 
-class App extends Component {
- 
-  render() {
-    return (
-      <div className="App">
-       {data.map(list=><List {...list} />)}
-      </div>
-    );
-  }
+`;
+
+const InfoPanel =()=>{
+ const [visible,setVisisble] = useState(true);
+ return visible ? (
+ <Info>
+    <h1>Drag drop Kanban:</h1><br></br>
+    Panels and items can be dragged & dropped.
+    Could be improved with extra optiapimasatioon 
+    and caching (Memorization of pure functional compontents).
+    The application therefore uses react hooks (useState). And Redux can
+    be easly implemented if needed.
+    <br></br>
+    <CloseBtn onClick={()=>setVisisble(false)} >close</CloseBtn>
+  </Info>) : null
 }
+const App = () =>
+<React.Fragment>
+  <InfoPanel />
+  <Kanban data={generateDummyData()} />
+</React.Fragment>
+
 
 export default App;

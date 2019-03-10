@@ -1,147 +1,141 @@
-[
-    {
-        "title": "Applied",
-        "items":[
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            }
-        ]
-    },
-    {
-        "title": "Interview",
-        "items":[
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            }
-        ]
-    },
-    {
-        "title": "Interview 2",
-        "items":[
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            }
-        ]
-    },
-    {
-        "title": "Rejected",
-        "items":[
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            }
-        ]
-    },
-    {
-        "title": "Add to group hired",
-        "items":[
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            },
-            {
-                "name": "Emilia clark",
-                "age": 30,
-                "gender": "Male",
-                "location": "deurne"
-            }
-        ]
-    }
-]
+[{
+    "title": "Applied",
+    "items": [{
+        "name": "April O'Neil",
+        "location": "Deurne",
+        "age": 30,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 3,
+        "uid": "0187133c-87ff-486e-af4c-5c2473a53640"
+    }, {
+        "name": "Betty Boop",
+        "location": "Deurne",
+        "age": 31,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 1,
+        "uid": "cb9bafba-12b0-423a-9de1-508ac998c134"
+    }, {
+        "name": "Lois Griffin",
+        "location": "Deurne",
+        "age": 37,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 0,
+        "uid": "0d0e64bf-ce6d-4636-ac28-2fd015243c46"
+    }, {
+        "name": "Wilma Flinstone",
+        "location": "Deurne",
+        "age": 35,
+        "gender": "Female",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 3,
+        "uid": "3dd2386d-3e74-4251-b28c-b8e723935479"
+    }]
+}, {
+    "title": "Rejected",
+    "items": [{
+        "name": "Betty Boop",
+        "location": "Deurne",
+        "age": 38,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 3,
+        "uid": "3745837f-b246-4e14-ac78-404a7016eb14"
+    }, {
+        "name": "Lois Griffin",
+        "location": "Deurne",
+        "age": 37,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 3,
+        "uid": "61cce47f-ac06-41f8-83bb-c722e0acda7e"
+    }, {
+        "name": "Wilma Flinstone",
+        "location": "Deurne",
+        "age": 37,
+        "gender": "Female",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 0,
+        "uid": "21a0b1cf-f82b-491b-9bc9-bc0482240457"
+    }, {
+        "name": "Wonder Wooman",
+        "location": "Deurne",
+        "age": 33,
+        "gender": "Female",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 0.5,
+        "uid": "bc0dd7e9-981e-4614-84a4-8a606573b1ee"
+    }]
+}, {
+    "title": "Interview",
+    "items": [{
+        "name": "Lois Griffin",
+        "location": "Deurne",
+        "age": 32,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 0,
+        "uid": "cba50841-3c51-45dc-ad3c-b9f8ff61ddac"
+    }, {
+        "name": "Wilma Flinstone",
+        "location": "Deurne",
+        "age": 35,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 4,
+        "uid": "8876cdf7-4e25-4b07-9e7a-2fde1f747409"
+    }, {
+        "name": "Wonder Wooman",
+        "location": "Deurne",
+        "age": 32,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 1.5,
+        "uid": "6071b693-300a-425f-b306-941c2f801a02"
+    }, {
+        "name": "Lana Kane",
+        "location": "Deurne",
+        "age": 36,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 0.5,
+        "uid": "3dbb624d-4611-469f-a5d7-6b0673cc0b56"
+    }]
+}, {
+    "title": "Add to group hired",
+    "items": [{
+        "name": "Wilma Flinstone",
+        "location": "Deurne",
+        "age": 31,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 4.5,
+        "uid": "b35afdeb-97d5-46a9-9f24-0b86e36a345e"
+    }, {
+        "name": "Wonder Wooman",
+        "location": "Deurne",
+        "age": 30,
+        "gender": "Female",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 3.5,
+        "uid": "3a3ebd35-3aa7-49ef-bf04-5c8e2516075d"
+    }, {
+        "name": "Lana Kane",
+        "location": "Deurne",
+        "age": 36,
+        "gender": "Female",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 4.5,
+        "uid": "028c8220-a880-4722-8906-fe2c6ef47ac2"
+    }, {
+        "name": "Jessica Rabbit",
+        "location": "Deurne",
+        "age": 36,
+        "gender": "Male",
+        "thumbnail": "/assets/images/dummy.jpg",
+        "rating": 1.5,
+        "uid": "a48c32f9-4597-48cf-b859-947302a7a411"
+    }]
+}]
