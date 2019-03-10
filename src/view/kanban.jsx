@@ -18,13 +18,11 @@ const Grid = styled(Sortable)`
         column-count: 5;
         column-gap: 1em;
     }
-
-
 `;
 
 /**
  * Kanban: 
- * almost pure fuctional component (could be easyer optimized)
+ * almost pure fuctional component (can be better optimized)
  * you can drag drop items & pannels
  * 
  * @param {*} {data:initialData}
@@ -34,23 +32,12 @@ export default function Kanban({data:initialData}){
     const [selectedData, setSelectedData] = useState(null);
     const [data, setData] = useState(initialData);
     
-    /**
-     * selects current list data by id 
-     * and updates all children
-     * @param {array} order
-     * @param {number} id
-     */
     function updateList(order,id){
         const items = flatMap(data,list=>list.items); // could be cached with memoization funcition
         const newitems = sort(order,[...items, selectedData],'id');
         data[id].items = newitems;
         setData(data);
     }
-
-    /**
-     * reoreders the all panels
-     * @param {array} order
-     */
     function updatePanels(order){
         const  newData = sort(order,[...data, selectedData],'id');
         setData(newData)

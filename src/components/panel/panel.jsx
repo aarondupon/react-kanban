@@ -12,15 +12,10 @@ const Container = styled.div`
     @media (max-width: 1550px) {
         width: calc(25% - 40px);
     }
-
-    /* @media (max-width: 1450px) {
-        width: calc(30% - 40px);
-    } */
     @media (max-width: 1350px) {
         width: auto;
         float:none;
     }
-
     background-color: rgb(247,247,247);
     box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.16);
     :hover{

@@ -33,10 +33,9 @@ const InfoPanel =()=>{
  <Info>
     <h1>Drag drop Kanban:</h1><br></br>
     Panels and items can be dragged & dropped.
-    Could be improved with extra optiapimasatioon 
-    and caching (Memorization of pure functional compontents).
-    The application therefore uses react hooks (useState). And Redux can
-    be easly implemented if needed.
+    Preformance can be improved with caching (Memorization of pure functional compontents).
+    The application therefore uses react hooks (useState). No Redux, but can
+    be easly implemented with hooks & hoc functions (reduc-connect) if needed.
     <br></br>
     <CloseBtn onClick={()=>setVisisble(false)} >close</CloseBtn>
   </Info>) : null
