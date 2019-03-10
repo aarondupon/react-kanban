@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 http://kanban.aarondupon.be/
 
-[![Image from Gyazo](https://i.gyazo.com/10fa9a1171288ab90babcf50c14fa6fe.gif)](https://gyazo.com/10fa9a1171288ab90babcf50c14fa6fe)
+[![Image from Gyazo](https://i.gyazo.com/739598cc76141f4cc0743bfc4c6fdd25.gif)](https://gyazo.com/739598cc76141f4cc0743bfc4c6fdd25)
 
 ## Available Scripts
 
