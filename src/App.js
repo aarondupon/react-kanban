@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import Kanban from './view/kanban';
+import Kanban from './components/kanban';
 import {generateDummyData} from './api';
 
 const Info = styled.div`

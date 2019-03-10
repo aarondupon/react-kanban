@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import flatMap from 'lodash.flatmap';
-import Panel,{PanelHeader} from '../components/panel';
-import List from '../components/list/list';
 import styled from 'styled-components';
 import Sortable from 'react-sortablejs';
-import {sort} from '../utils';
-import User from '../components/list/view/user';
+import Panel,{PanelHeader} from '../common/panel';
+import List from '../common/list';
+import UserItem from '../common/user-item';
+import {sort} from '../../utils';
+
 
 import './kanban.css'; 
 
@@ -64,7 +65,7 @@ export default function Kanban({data:initialData}){
             >
             <PanelHeader title={list.title}  count={list.items.length} />
             <List 
-                itemRender={User}
+                itemRender={UserItem}
                 items={list.items}  
                 onSelectListItem={updateSelectedData} 
                 onChange={(order) => updateList(order,key)} 

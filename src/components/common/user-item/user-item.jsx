@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Thumbnail from '../../images/thumbnail';
+import Thumbnail from '../images/thumbnail';
 
 const RowLeft = styled.div`
   display: inline-block;
@@ -18,10 +18,20 @@ const Container = styled.div`
   cursor:grab;
   :active {
     cursor:grabbing;
-
   }
 `;
 
+const Label = styled.h1`
+  float: left;
+  margin-right: 10px;
+  max-width: calc(100% - 50px);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float:left;
+  margin: 0px 10px 0px 0px;
+`;
 function User({hover,value}) {
     const {
         thumbnail = '',
@@ -37,14 +47,12 @@ function User({hover,value}) {
             <Thumbnail hover={hover}  src={thumbnail} />
             <RowLeft  hover={hover}>
                 <div style={{width:'100%',display:'inline-block',paddingBottom:2}}>
-                <div style={{float:'left',marginRight:10}} >
-                    <h1 style={{margin:0}}>{name}</h1>
-                </div>
-                <div style={{float:'left',color:'rgb(173, 143	,67)'	}} >&#9733; {rating}</div>
-                </div>
-                <div style={{float:'left', width:'100%',opacity:0.5}}>
-                    <span>{age} y/o</span> - <span>{gender}</span> - <span>{location}</span>
-                </div>
+                  <Label>{name}</Label>
+                  <div style={{float:'left',color:'rgb(173, 143	,67)'	}} >&#9733; {rating}</div>
+                  </div>
+                  <div style={{float:'left', width:'100%',opacity:0.5}}>
+                      <span>{age} y/o</span> - <span>{gender}</span> - <span>{location}</span>
+                  </div>
             </RowLeft>
         </Container>
     )  
