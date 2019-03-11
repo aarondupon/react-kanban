@@ -7,9 +7,8 @@ import List from '../common/list';
 import UserItem from '../common/user-item';
 import {sort} from '../../utils';
 
-
 import './kanban.css'; 
-// const Grid = styled.div`
+
 const Grid = styled(Sortable)`
     padding: 0;
     width: calc(100% - 40px);
@@ -47,14 +46,13 @@ export default function Kanban({data:initialData}){
     return (    
       <Grid 
         className={'grid'}
-        onMouseUp={()=>setSelectedData(null)}
+        onMouseUp={()=>setTimeout(()=>setSelectedData(null),0)} /* fix - event bubbling order safari */
         options={{
             group: {
                 name: 'grid-group',
             },
             filter: "ul",
             preventOnFilter: false, 
-            forceFallback: true,
         }}
         onChange={updatePanels}
         >
