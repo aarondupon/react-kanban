@@ -16,3 +16,7 @@ li.sortable-ghost{
 .sortable-ghost div {
     visibility: hidden;
 }
+
+li.sortable-chosen > .bottom-line {
+    visibility: hidden;
+}

@@ -50,7 +50,7 @@ export default function ListItem(props) {
         <Child hover={hover} value={value} /> 
         : <Dummy/>}
 
-       {!last  && <Line />}
+       {!last  && <Line className="bottom-line" />}
     </Container>
   )
 }
