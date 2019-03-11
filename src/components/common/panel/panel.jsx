@@ -12,7 +12,6 @@ const Container = styled.div`
     
     @media (max-width: 1550px) {
         width: calc(25% - 40px);
-        min-width:100%;
     }
     @media (max-width: 1350px) {
         width: auto;
