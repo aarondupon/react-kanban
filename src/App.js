@@ -35,7 +35,7 @@ const InfoPanel =()=>{
     Panels and items can be dragged & dropped.
     Preformance can be improved with caching (Memorization of pure functional compontents).
     The application therefore uses react hooks (useState). No Redux, but can
-    be easly implemented with hooks & hoc functions (reduc-connect) if needed.
+    be easly implemented with hooks & hoc functions (redux-connect).
     <br></br>
     <CloseBtn onClick={()=>setVisisble(false)} >close</CloseBtn>
   </Info>) : null
