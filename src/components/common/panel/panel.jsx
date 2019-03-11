@@ -9,9 +9,10 @@ const Container = styled.div`
     vertical-align: top;
     width: calc(20% - 40px);
     float:left;
-    min-width:100%;
+    
     @media (max-width: 1550px) {
         width: calc(25% - 40px);
+        min-width:100%;
     }
     @media (max-width: 1350px) {
         width: auto;
