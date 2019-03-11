@@ -42,7 +42,6 @@ export default function Kanban({data:initialData}){
         const  newData = sort(order,[...data, selectedData],'id');
         setData(newData)
     }
-    console.log('selectedData',selectedData)
     return (    
       <Grid 
         className={'grid'}
