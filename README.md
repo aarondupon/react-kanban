@@ -7,9 +7,14 @@ http://kanban.aarondupon.be/
 
 ## Available Scripts
 
+### `nvm use`
+
 In the project directory, you can run:
 You can use nvm to select te correct node version.
+
 node v10.8.0
+
+See more about [node version manager](https://github.com/creationix/nvm)
 
 ### `npm start`
 
