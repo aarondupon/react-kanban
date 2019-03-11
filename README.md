@@ -5,13 +5,15 @@ http://kanban.aarondupon.be/
 
 [![Image from Gyazo](https://i.gyazo.com/739598cc76141f4cc0743bfc4c6fdd25.gif)](https://gyazo.com/739598cc76141f4cc0743bfc4c6fdd25)
 
-## Available Scripts
+## Node
 
 ### `nvm use`
 
 node v10.8.0
 
 See more about [node version manager](https://github.com/creationix/nvm)
+
+## Available Scripts
 
 ### `npm start`
 
