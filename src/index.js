@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import "@babel/polyfill";
 import App from './app';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "lodash.flatmap": "^4.5.0",
     "lodash.sortby": "^4.7.0",
     "moize": "^5.4.2",
@@ -26,7 +27,7 @@
   "browserslist": [
     ">0.2%",
     "not dead",
-    "not ie <= 11",
+    "not ie < 11",
     "not op_mini all"
   ]
 }

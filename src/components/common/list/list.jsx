@@ -20,7 +20,7 @@ function List({
     const listItems = items.map((val, key) => 
         <ListItemRender
             itemRender={itemRender}
-            onDragStart={(e)=>onSelectListItem(val)}
+            onMouseDown={(e)=>onSelectListItem(val)}
             last={key === items.length-1}
             key={key} 
             value={val}
@@ -31,7 +31,9 @@ function List({
                 animation: 150,
                 group: {
                     name: 'sortable-list-group',
-                }
+                },
+                forceFallback: true,
+
             }}
             tag="ul" 
             onChange={onChange}

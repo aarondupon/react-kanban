@@ -9,7 +9,7 @@ import {sort} from '../../utils';
 
 
 import './kanban.css'; 
-
+// const Grid = styled.div`
 const Grid = styled(Sortable)`
     padding: 0;
     width: calc(100% - 40px);
@@ -43,28 +43,30 @@ export default function Kanban({data:initialData}){
         const  newData = sort(order,[...data, selectedData],'id');
         setData(newData)
     }
-
+    console.log('selectedData',selectedData)
     return (    
       <Grid 
         className={'grid'}
         onMouseUp={()=>setSelectedData(null)}
-        onDragEnd={()=>setSelectedData(null)}
         options={{
             group: {
-                name: 'list-group',
+                name: 'grid-group',
             },
+            filter: "ul",
+            preventOnFilter: false, 
+            forceFallback: true,
         }}
         onChange={updatePanels}
         >
-       {data.map((list, key)=>
+       {data.map(({items,title,id}, key)=>
         <Panel
-            id={list.id} 
+            id={id} 
             key={key} 
             >
-            <PanelHeader title={list.title}  count={list.items.length} />
+            <PanelHeader title={title}  count={items.length} />
             <List 
                 itemRender={UserItem}
-                items={list.items}  
+                items={items}  
                 onSelectListItem={setSelectedData} 
                 onChange={(order) => updateList(order,key)} 
                 />

@@ -33,12 +33,13 @@ const Line = styled.div`
 `;
 
 export default function ListItem(props) {
-  const {onDragStart = ()=>{},onEnd = ()=>{},last,value, itemRender:Child} = props;
+  const {onDragStart = ()=>{},onMouseDown= () =>{},onEnd = ()=>{},last,value, itemRender:Child} = props;
   const {id} = value;
   const [hover, setHover] = useState(false);
   return (
     <Container 
         onDragStart={onDragStart}
+        onMouseDown={onMouseDown}
         onMouseUp={onEnd}
         onDragEnd={onEnd}
         onMouseEnter={()=>setHover(true)} 
@@ -67,5 +68,6 @@ ListItem.propTypes = {
   itemRender:PropTypes.object, 
   last: PropTypes.bool,
   onDragStart:PropTypes.func,
+  onMouseDown:PropTypes.func,
   onEnd: PropTypes.func,
 };

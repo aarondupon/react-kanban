@@ -33,6 +33,7 @@ function Panel({
     return (
         <Container
             data-id={id}
+            className="panel"
             onMouseDown={onMouseDown}
             >
             {children}
@@ -45,9 +46,9 @@ Panel.propTypes = {
     id: PropTypes.string.isRequired,
     onMouseDown:PropTypes.func,
     children: PropTypes.oneOfType([
-        PropTypes.node,
+        PropTypes.any,
         PropTypes.arrayOf(
-            PropTypes.node
+            PropTypes.any
         )])
   };
 

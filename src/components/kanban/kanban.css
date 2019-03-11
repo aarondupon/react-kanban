@@ -2,13 +2,13 @@ li.sortable-chosen{
     transition: background-color 50ms;
     background:rgb(88, 199, 255);
     color:#fff !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 12px 4px;
 }
-
 li.sortable-ghost{
     color:#fff!important;
     background-color: #fff;
+    box-shadow: none;
 }
-
 .sortable-ghost{
     border: 5px dotted black;
     box-sizing: border-box;
