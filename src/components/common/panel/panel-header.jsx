@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonMenu from "../button/button-menu";
 
-export default function ListHeader({ title = "no-title", count = 0 }) {
+export default function PanelHeader({ title = "no-title", count = 0 }) {
   const style = {
     width: "100%",
     height: 50,
