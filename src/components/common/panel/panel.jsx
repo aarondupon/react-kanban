@@ -1,56 +1,45 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const Container = styled.div`
-    margin: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
-    vertical-align: top;
-    width: calc(20% - 40px);
-    float:left;
-    
-    @media (max-width: 1550px) {
-        width: calc(25% - 40px);
-    }
-    @media (max-width: 1350px) {
-        width: auto;
-        float:none;
-    }
-    background-color: rgb(247,247,247);
-    box-shadow: 0px 8px 10px -4px rgba(0,0,0,0.16);
-    :hover{
-        background:rgb(250,250,250);
-        transition:background 200ms;
-    }
-`;
-function Panel({
-    items=[], 
-    id,
-    onMouseDown=()=>{},
-    children,
-}) {
+  margin: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(20% - 40px);
+  float: left;
 
-    return (
-        <Container
-            data-id={id}
-            className="panel"
-            onMouseDown={onMouseDown}
-            >
-            {children}
-        </Container>
-    )
+  @media (max-width: 1550px) {
+    width: calc(25% - 40px);
+  }
+  @media (max-width: 1350px) {
+    width: auto;
+    float: none;
+  }
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.16);
+  :hover {
+    background: rgb(250, 250, 250);
+    transition: background 200ms;
+  }
+`;
+function Panel({ items = [], id, onMouseDown = () => {}, children }) {
+  return (
+    <Container data-id={id} className="panel" onMouseDown={onMouseDown}>
+      {children}
+    </Container>
+  );
 }
 
 Panel.propTypes = {
-    item: PropTypes.array,
-    id: PropTypes.string.isRequired,
-    onMouseDown:PropTypes.func,
-    children: PropTypes.oneOfType([
-        PropTypes.any,
-        PropTypes.arrayOf(
-            PropTypes.any
-        )])
-  };
+  item: PropTypes.array,
+  id: PropTypes.string.isRequired,
+  onMouseDown: PropTypes.func,
+  children: PropTypes.oneOfType([
+    PropTypes.any,
+    PropTypes.arrayOf(PropTypes.any)
+  ])
+};
 
-export default React.memo(Panel)
+export default React.memo(Panel);
